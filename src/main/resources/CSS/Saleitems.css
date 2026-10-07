@@ -1,0 +1,205 @@
+.pay-btn {
+    -fx-background-color: #ff8c00;
+    -fx-text-fill: white;
+
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+
+    -fx-padding: 7px 20px;
+
+    -fx-background-radius: 9;
+    -fx-border-radius: 9;
+
+    -fx-border-color: rgba(255,255,255,0.25);
+    -fx-border-width: 2;
+
+    -fx-cursor: hand;
+}
+.pay-btn:hover {
+    -fx-background-color: linear-gradient(to right, #ff9f43, #ffb366);
+}
+.pay-btn:pressed {
+    -fx-background-color: #cc6f1a;
+}
+.pay-btn:focused {
+    -fx-border-color: rgba(255,255,255,0.5);
+}
+.remove-btn {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #cc0000;
+
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+
+    -fx-padding: 7px 20px;
+
+    -fx-background-radius: 9;
+    -fx-border-radius: 9;
+
+    -fx-border-color: #cc0000;
+    -fx-border-width: 1;
+
+    -fx-cursor: hand;
+}
+.remove-btn:hover {
+    -fx-background-color: #ffe6e6;
+}
+.remove-btn:pressed {
+    -fx-background-color: #e57373;
+    -fx-text-fill: #ffffff;
+}
+.remove-btn:focused {
+    -fx-border-color: #ff0000;
+}
+
+.receipt-btn {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+
+    -fx-padding: 7px 20px;
+
+    -fx-background-radius: 9;
+    -fx-border-radius: 9;
+
+    -fx-border-color: #000000;
+    -fx-border-width: 1;
+
+    -fx-cursor: hand;
+}
+.receipt-btn:hover {
+    -fx-background-color: #f0f0f0;
+}
+.receipt-btn:pressed {
+    -fx-background-color: #d0d0d0;
+    -fx-text-fill: #111111;
+}
+.receipt-btn:focused {
+    -fx-border-color: #555555;
+}
+
+.side-anchor {
+    -fx-background-color: #f6eadf;
+    -fx-border-color: #f5c49a;
+
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+
+    -fx-border-width: 1;
+}
+
+.topanchor {
+    -fx-background-color: #FF6500;
+    -fx-background-radius: 6;
+    -fx-border-width: 0;
+}
+
+.scroll-pane {
+-fx-background-color: #ffffff;
+-fx-background-radius: 8px;
+}
+
+.scroll-pane > .viewport{
+-fx-background-color: #ffffff;
+-fx-background-radius: 8px;
+}
+.text-trans {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-text-fill: #333;
+    -fx-prompt-text-fill: rgba(51,51,51,0.5);
+}
+.text-trans:focused {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.search {
+    -fx-background-color: #ff8c00;
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 6px;
+    -fx-padding: 5 12 5 12;
+    -fx-cursor: hand;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(255,140,0,0.3), 12, 0, 0, 4);
+}
+
+.search:hover {
+    -fx-background-color: #e67e00;
+    -fx-effect: dropshadow(gaussian, rgba(255,140,0,0.4), 18, 0, 0, 6);
+}
+
+.search:pressed {
+    -fx-background-color: #cc6f00;
+    -fx-effect: dropshadow(gaussian, rgba(255,140,0,0.25), 8, 0, 0, 2);
+    -fx-scale-x: 0.97;
+    -fx-scale-y: 0.97;
+}
+
+.data-field {
+    -fx-background-color: transparent;
+    -fx-text-fill: #4a3a20;
+    -fx-prompt-text-fill: #a89a80;
+
+    -fx-font-size: 13px;
+
+    -fx-padding: 0px;
+
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+
+    -fx-border-color: transparent transparent #c9b892 transparent;
+    -fx-border-width: 0 0 1.5 0;
+}
+.data-field:hover {
+    -fx-border-color: transparent transparent #ff9f43 transparent;
+}
+.data-field:focused {
+    -fx-border-color: transparent transparent #ff8c00 transparent;
+    -fx-border-width: 0 0 2 0;
+}
+.hide-btn {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 6;
+    -fx-cursor: hand;
+    -fx-background-radius: 20;
+}
+
+/* Hover */
+.hide-btn:hover {
+    -fx-background-color: rgba(255,255,255,0.08);
+
+    -fx-scale-x: 1.08;
+    -fx-scale-y: 1.08;
+
+    -fx-effect: dropshadow(gaussian,
+            rgba(255,255,255,0.15),
+            12, 0.2, 0, 0);
+}
+
+/* Click Effect */
+.hide-btn:pressed {
+
+    /* small press animation */
+    -fx-scale-x: 0.88;
+    -fx-scale-y: 0.88;
+
+    /* scattered reddish flash */
+    -fx-effect: dropshadow(gaussian,
+            rgba(255,40,40,0.85),
+            28, 0.55, 0, 0);
+
+    /* no boxed background */
+    -fx-background-color: transparent;
+}
+

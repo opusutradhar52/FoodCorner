@@ -1,0 +1,259 @@
+.shadow{
+-fx-background-color: #ffffff;
+-fx-background-radius: 10;
+-fx-border-color: #e5c9a8;
+-fx-border-width: 1.5;
+-fx-border-radius: 10;
+-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 15, 0.25, 0, 0);
+}
+.wd-btn {
+    -fx-background-color: #F38500;
+    -fx-background-radius: 7;
+    -fx-border-radius: 7;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 0 0;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.10), 4, 0.15, 0, 1);
+}
+
+.wd-btn:hover {
+    -fx-background-color: #e57c00;
+}
+
+.wd-btn:pressed {
+    -fx-background-color: #d97300;
+    -fx-effect: dropshadow(gaussian, rgba(220,50,30,0.55), 22, 0.45, 0, 0);
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}
+
+/* ---------- Line Chart 1: Monthly Income Overview ---------- */
+.income-chart {
+    -fx-background-color: transparent;
+}
+.income-chart .chart-plot-background {
+    -fx-background-color: #f4efe4;
+}
+.income-chart .chart-vertical-grid-lines {
+    -fx-stroke: transparent;
+}
+.income-chart .chart-horizontal-grid-lines {
+    -fx-stroke: #e0d5bf;
+    -fx-stroke-dash-array: 4 4;
+}
+.income-chart .chart-alternative-row-fill {
+    -fx-fill: transparent;
+    -fx-stroke: transparent;
+}
+.income-chart .axis {
+    -fx-tick-label-fill: #7a6a4f;
+    -fx-font-size: 11px;
+    -fx-tick-label-rotation: 0;
+}
+.income-chart .chart-title {
+    -fx-text-fill: #4a3a20;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+.income-chart .default-color0.chart-series-line {
+    -fx-stroke: #2ecc71;
+    -fx-stroke-width: 2.5px;
+}
+.income-chart .default-color0.chart-line-symbol {
+    -fx-background-color: #2ecc71, white;
+    -fx-background-insets: 0, 2;
+    -fx-background-radius: 5px;
+    -fx-padding: 5px;
+}
+
+/* ---------- Line Chart 2: Monthly Cost Overview ---------- */
+.cost-chart {
+    -fx-background-color: transparent;
+}
+.cost-chart .chart-plot-background {
+    -fx-background-color: #f4efe4;
+}
+.cost-chart .chart-vertical-grid-lines {
+    -fx-stroke: transparent;
+}
+.cost-chart .chart-horizontal-grid-lines {
+    -fx-stroke: #e0d5bf;
+    -fx-stroke-dash-array: 4 4;
+}
+.cost-chart .chart-alternative-row-fill {
+    -fx-fill: transparent;
+    -fx-stroke: transparent;
+}
+.cost-chart .axis {
+    -fx-tick-label-fill: #7a6a4f;
+    -fx-font-size: 11px;
+    -fx-tick-label-rotation: 0;
+}
+.cost-chart .chart-title {
+    -fx-text-fill: #4a3a20;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+.cost-chart .default-color0.chart-series-line {
+    -fx-stroke: #e74c3c;
+    -fx-stroke-width: 2.5px;
+}
+.cost-chart .default-color0.chart-line-symbol {
+    -fx-background-color: #e74c3c, white;
+    -fx-background-insets: 0, 2;
+    -fx-background-radius: 5px;
+    -fx-padding: 5px;
+}
+
+/* ---------- Text Field: underline only ---------- */
+.amount-field {
+    -fx-background-color: transparent;
+    -fx-text-fill: #4a3a20;
+    -fx-prompt-text-fill: #a89a80;
+
+    -fx-font-size: 13px;
+
+    -fx-padding: 0px;
+
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+
+    -fx-border-color: transparent transparent #c9b892 transparent;
+    -fx-border-width: 0 0 1.5 0;
+}
+.amount-field:hover {
+    -fx-border-color: transparent transparent #ff9f43 transparent;
+}
+.amount-field:focused {
+    -fx-border-color: transparent transparent #ff8c00 transparent;
+    -fx-border-width: 0 0 2 0;
+}
+
+/* ---------- Label styled the same way, with fake prompt text ---------- */
+.label-as-field {
+    -fx-background-color: transparent;
+    -fx-text-fill: #a89a80;
+
+    -fx-font-size: 13px;
+
+    -fx-padding: 0px;
+
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+
+    -fx-border-color: transparent transparent #c9b892 transparent;
+    -fx-border-width: 0 0 1.5 0;
+}
+.label-as-field:hover {
+    -fx-border-color: transparent transparent #ff9f43 transparent;
+}
+
+.pay-btn {
+    -fx-background-color: #F38500;
+    -fx-background-radius: 7;
+    -fx-border-radius: 7;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 0 0;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.10), 4, 0.15, 0, 1);
+}
+
+.pay-btn:hover {
+    -fx-background-color: #e57c00;
+}
+
+.pay-btn:pressed {
+    -fx-background-color: #d97300;
+    -fx-effect: dropshadow(gaussian, rgba(30,90,220,0.55), 22, 0.45, 0, 0);
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}
+
+.combo-box {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-border-color: transparent transparent #d8c9a8 transparent;
+    -fx-border-width: 0 0 1 0;
+
+    -fx-padding: 2px 0px;
+}
+.combo-box .arrow-button {
+    -fx-background-color: transparent;
+}
+.combo-box .arrow {
+    -fx-background-color: #a89a80;
+}
+.combo-box .list-cell {
+    -fx-text-fill: #a89a80;
+    -fx-font-size: 13px;
+    -fx-background-color: transparent;
+}
+.combo-box:hover {
+    -fx-border-color: transparent transparent #ff8c00 transparent;
+}
+.combo-box:focused {
+    -fx-border-color: transparent transparent #ff8c00 transparent;
+}
+.combo-box:showing {
+    -fx-border-color: transparent transparent #ff8c00 transparent;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #d8c9a8;
+    -fx-border-width: 1;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+}
+.combo-box-popup .list-view .list-cell {
+    -fx-text-fill: #4a3a20;
+    -fx-font-size: 13px;
+    -fx-padding: 6px 10px;
+}
+.combo-box-popup .list-view .list-cell:filled:hover {
+    -fx-background-color: #fef4eb;
+}
+.combo-box-popup .list-view .list-cell:filled:selected {
+    -fx-background-color: #ff8c00;
+    -fx-text-fill: white;
+}
+
+.info-btn {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 6;
+    -fx-cursor: hand;
+    -fx-background-radius: 20;
+}
+
+/* Hover */
+.info-btn:hover {
+    -fx-background-color: rgba(255,255,255,0.08);
+
+    -fx-scale-x: 1.08;
+    -fx-scale-y: 1.08;
+
+    -fx-effect: dropshadow(gaussian,
+            rgba(255,255,255,0.15),
+            12, 0.2, 0, 0);
+}
+
+/* Click Effect */
+.info-btn:pressed {
+
+    /* small press animation */
+    -fx-scale-x: 0.88;
+    -fx-scale-y: 0.88;
+
+    /* scattered blueish flash */
+    -fx-effect: dropshadow(gaussian,
+            rgba(40,120,255,0.85),
+            28, 0.55, 0, 0);
+
+    /* no boxed background */
+    -fx-background-color: transparent;
+}

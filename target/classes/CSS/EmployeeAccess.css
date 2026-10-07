@@ -1,0 +1,187 @@
+.confirm-btn {
+    -fx-background-color: #F38500;
+    -fx-background-radius: 7;
+    -fx-border-radius: 7;
+
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+
+    -fx-padding: 0 0 0 0;
+
+    -fx-cursor: hand;
+
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.10), 4, 0.15, 0, 1);
+}
+
+/* Hover */
+.confirm-btn:hover {
+    -fx-background-color: #e57c00;
+}
+
+/* Click effect */
+.confirm-btn:pressed {
+    -fx-background-color: #d97300;
+
+    /* soft scattered green glow */
+    -fx-effect: dropshadow(gaussian, rgba(70,255,120,0.45), 22, 0.45, 0, 0);
+
+    /* small press animation */
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}
+
+.delete-btn {
+    -fx-background-color: #F38500;
+    -fx-background-radius: 7;
+    -fx-border-radius: 7;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 0 0;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.10), 4, 0.15, 0, 1);
+}
+
+.delete-btn:hover {
+    -fx-background-color: #e57c00;
+}
+
+.delete-btn:pressed {
+    -fx-background-color: #d97300;
+    -fx-effect: dropshadow(gaussian, rgba(220,50,30,0.55), 22, 0.45, 0, 0);
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}
+
+.filter-btn {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 6;
+    -fx-cursor: hand;
+    -fx-background-radius: 20;
+}
+
+/* Hover */
+.filter-btn:hover {
+    -fx-background-color: rgba(255,255,255,0.08);
+
+    -fx-scale-x: 1.08;
+    -fx-scale-y: 1.08;
+
+    -fx-effect: dropshadow(gaussian,
+            rgba(255,255,255,0.15),
+            12, 0.2, 0, 0);
+}
+
+/* Click Effect */
+.filter-btn:pressed {
+
+    /* small press animation */
+    -fx-scale-x: 0.88;
+    -fx-scale-y: 0.88;
+
+    /* scattered blueish flash */
+    -fx-effect: dropshadow(gaussian,
+            rgba(40,120,255,0.85),
+            28, 0.55, 0, 0);
+
+    /* no boxed background */
+    -fx-background-color: transparent;
+}
+
+.attendance-btn {
+    -fx-background-color: #F38500;
+    -fx-background-radius: 7;
+    -fx-border-radius: 7;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 0 0;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.10), 4, 0.15, 0, 1);
+}
+
+.attendance-btn:hover {
+    -fx-background-color: #e57c00;
+}
+
+.attendance-btn:pressed {
+    -fx-background-color: #d97300;
+    -fx-effect: dropshadow(gaussian, rgba(30,90,220,0.55), 22, 0.45, 0, 0);
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}
+
+/* ---------- Text Field ---------- */
+.text-field {
+    -fx-background-color: #fdf6ee;
+    -fx-text-fill: #4a3a20;
+    -fx-prompt-text-fill: #b5a488;
+
+    -fx-font-size: 13px;
+
+    -fx-padding: 6px 12px;
+
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+
+    -fx-border-color: #f0d3a8;
+    -fx-border-width: 1.5;
+}
+.text-field:focused {
+    -fx-border-color: #ff8c00;
+    -fx-effect: dropshadow(gaussian, rgba(255,140,0,0.25), 6, 0.3, 0, 0);
+}
+
+/* ---------- ComboBox ---------- */
+.combo-box {
+    -fx-background-color: #fdf6ee;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+
+    -fx-border-color: #f0d3a8;
+    -fx-border-width: 1.5;
+
+    -fx-padding: 2px 4px;
+}
+.combo-box .list-cell {
+    -fx-text-fill: #4a3a20;
+    -fx-font-size: 13px;
+    -fx-background-color: transparent;
+    -fx-padding: 4px 6px;
+}
+.combo-box .arrow-button {
+    -fx-background-color: transparent;
+}
+.combo-box .arrow {
+    -fx-background-color: #e67e22;
+}
+.combo-box:hover {
+    -fx-border-color: #ff8c00;
+}
+.combo-box:focused,
+.combo-box:showing {
+    -fx-border-color: #ff8c00;
+    -fx-effect: dropshadow(gaussian, rgba(255,140,0,0.25), 6, 0.3, 0, 0);
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #f0d3a8;
+    -fx-border-width: 1;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+}
+.combo-box-popup .list-view .list-cell {
+    -fx-text-fill: #4a3a20;
+    -fx-font-size: 13px;
+    -fx-padding: 6px 10px;
+}
+.combo-box-popup .list-view .list-cell:filled:hover {
+    -fx-background-color: #fef4eb;
+}
+.combo-box-popup .list-view .list-cell:filled:selected {
+    -fx-background-color: #ff8c00;
+    -fx-text-fill: white;
+}

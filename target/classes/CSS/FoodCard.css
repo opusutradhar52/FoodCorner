@@ -1,0 +1,78 @@
+.foodcard {
+  display: inline-block;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  transition: box-shadow 0.2s ease;
+}
+.foodcard:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.13);
+}
+
+.update-btn {
+    -fx-background-color: #fef4eb;
+    -fx-text-fill: #69441a;
+
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+
+    -fx-padding: 0px 0px;
+
+    -fx-background-radius: 3;
+    -fx-border-radius: 3;
+
+    -fx-border-width: 0;
+
+    -fx-cursor: hand;
+
+    -fx-min-width: 0;
+    -fx-min-height: 0;
+}
+.update-btn:hover {
+    -fx-background-color: #f5d4b0;
+}
+.update-btn:pressed {
+    -fx-background-color: #e8b87a;
+    -fx-text-fill: #ffffff;
+}
+.update-btn:focused {
+    -fx-border-width: 0;
+}
+
+.anchor_boundary {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #f7e1c8;
+    -fx-border-width: 1.5;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 0px 0px;
+}
+
+.add {
+    -fx-background-color: #ff8c00;
+    -fx-text-fill: white;
+
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+
+    -fx-padding: 0px 0px;
+
+    -fx-background-radius: 9;
+    -fx-border-radius: 9;
+
+    -fx-cursor: hand;
+
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 8, 0.2, 0, 2);
+}
+.add:hover {
+    -fx-background-color: linear-gradient(to right, #ff9f43, #ffb366);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.35), 10, 0.25, 0, 3);
+}
+.add:pressed {
+    -fx-background-color: #cc6f1a;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 4, 0.15, 0, 1);
+}
+.add:focused {
+    -fx-effect: dropshadow(gaussian, rgba(255,159,67,0.6), 10, 0.4, 0, 0);
+}
